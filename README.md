@@ -1,4 +1,4 @@
 docker-ruby
 ===========
 
-Docker image for Ruby
+Docker image for Ruby latest version
