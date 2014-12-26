@@ -2,13 +2,13 @@ FROM infoslack/buildpack-deps
 
 MAINTAINER Daniel Romero <infoslack@gmail.com>
 
-ENV RUBY_VERSION 2.1.5
+ENV RUBY_VERSION 2.2.0
 
 RUN apt-get update \
         && apt-get install -y bison ruby \
         && rm -rf /var/lib/apt/lists/* \
         && mkdir -p /usr/src/ruby \
-        && curl -SL "http://cache.ruby-lang.org/pub/ruby/2.1/ruby-$RUBY_VERSION.tar.bz2" \
+        && curl -SL "http://cache.ruby-lang.org/pub/ruby/2.2/ruby-$RUBY_VERSION.tar.bz2" \
                 | tar -xjC /usr/src/ruby --strip-components=1 \
         && cd /usr/src/ruby \
         && autoconf \
