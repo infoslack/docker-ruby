@@ -2,7 +2,7 @@ FROM infoslack/buildpack-deps
 
 MAINTAINER Daniel Romero <infoslack@gmail.com>
 
-ENV RUBY_VERSION 2.2.0
+ENV RUBY_VERSION 2.2.1
 
 RUN apt-get update \
         && apt-get install -y bison ruby \
